@@ -1,0 +1,176 @@
+*{
+    box-sizing: inherit;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-body.png') repeat;
+}
+
+.Home-page {
+    width: 100%;
+    height: 732px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-footer-optimized.jpg') no-repeat bottom center;
+    color: #5e4027;
+    font-size: 1.5rem;
+}
+
+
+/* Header-l */
+
+.header-l {
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.header-l .header-l_img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.header-l_link-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-r {
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.header-r-top {
+    padding: 16px 0;
+    color: #8b0304;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-r-info {
+    padding-left: 25px;
+}
+
+.header-r-info a:hover {
+    text-decoration: none;
+    color: #faa519;
+}
+
+.header-r-info .info-icon-num-link {
+    font-size: 2rem;
+    color: #8b0304;
+    font-weight: 700;
+}
+
+/* Header right - bottom */
+
+
+.header-r-bottom {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-r-bottom-search {
+    width: 70%;
+    display: flex;
+    background: rgba(255,255,255,.4);
+    height: 37px;
+    border-color: #faa519;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #faa519;
+    padding: 0 20px;
+    position: relative;
+    color: #9d0b0f;
+}
+
+.header-r-bottom-search::after {
+    content: "";
+    display: block;
+    width: 13px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-search-left.png') no-repeat;
+}
+
+.header-r-bottom-search::before {
+    content: "";
+    display: block;
+    width: 13px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    bottom: -1px;
+    right: -13px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-search-right.png') no-repeat;
+}
+
+.search-info {
+    height: 37px;
+    width: 60%;
+    outline: none;
+    border: none;
+    border-top: 1px solid #faa519;
+    border-bottom: 1px solid #faa519;
+    background: transparent;
+    margin-right: auto;
+    padding-left: 60px;
+}
+
+.search-option {
+    display: flex;
+    width: 12%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-option .search-option-icon {
+    font-size: 1rem;
+}
+
+.header-r-bottom-search .search-btn {
+    display: flex;
+    align-items: center;
+    width: 18%;
+}
+
+.header-r-bottom-search .search-option-icon-btn {
+    padding-right: 6px;
+    font-size: 1.5rem;
+}
+
+.header-r-bottom-search .search-btn {
+
+    background-color: #faa519;
+        color: #9d0b0f;
+        position: absolute;
+        z-index: 1;
+        top: 1px;
+        bottom: 1px;
+        right: 0;
+        border-radius: 0;
+        line-height: 35px;
+        padding: 0 10px;
+}
+
+.search-info::placeholder {
+    color: #9d0b0f;
+}
