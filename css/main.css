@@ -368,7 +368,178 @@ a:hover {
 /* slide */
 
 .slide {
-    background-color: teal;
+    position: relative;
+    z-index: 1;
+    height: 346px;
+    max-height: 350px;
+    /* background-color: #dfdfdf; */
     width: 100%;
-    height: 400px;
+}
+
+.slide::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-slider.png') no-repeat center;
+    pointer-events: none;
+    background-size: 100% 100%;
+}
+
+
+
+.slide-btn-left {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    left: -7px;
+}
+
+.slide-btn-left::before {
+    display: inline-block;
+    content: "";
+    width: 19px;
+    height: 19px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-prev.png');
+    position: relative;
+    z-index: 2;
+}
+
+.slide-btn-left::after {
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 35px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-prev-bg.png');
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+}
+
+.slide-btn-right {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    right: -7px;
+}
+
+.slide-btn-right::before {
+    display: inline-block;
+    content: "";
+    width: 19px;
+    height: 19px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-next.png');
+    position: relative;
+    z-index: 2;
+}
+
+.slide-btn-right::after {
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 35px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-next-bg.png');
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+}
+.slide-btn-right:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+}
+
+
+.slide-dots {
+    position: absolute;
+    bottom: 10px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.slide-dot {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.slide-dot-btn:focus,
+.slide-dot-btn-active:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+}
+
+.slide-dot-btn,
+.slide-dot-btn-active {
+    border: 0;
+    background: transparent;
+    display: block;
+    height: 20px;
+    width: 20px;
+    outline: none;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.slide-dot-btn::before {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    content: "";
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-dot-active.png');
+}
+
+.slide-dot-btn-active::before {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    content: "";
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-dot.png');
 }
