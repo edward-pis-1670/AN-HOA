@@ -25,6 +25,17 @@ html {
     font-size: 1.5rem;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 /* Header-l */
 
@@ -261,9 +272,103 @@ html {
 /* Category */
 
 .category-menu {
-    width: 250px;
+    width: 100%;
     height: 346px;
     background: #8b0304 url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-product-menu.png') no-repeat center;
-    background-image: cover;
+    background-size: 97% 97%;
     color: #fff;
+}
+
+.cate-tab {
+    font-size: 16px;
+    padding: 15px 0 10px 0;
+    margin: 0 5px;
+    height: 50px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: solid 1px #a10c0d;
+    
+}
+
+.cate-tab:hover {
+    cursor: grab;
+}
+
+.cate-tab-img {
+    font-size: 1.6rem;
+    padding-left: 20px;
+}
+
+.cate-tab-title {
+    font-size: 1.6rem;
+    top: 18px;
+    position: absolute;
+    left: 44px;
+    line-height: 16px;
+    padding-left: 8px;
+    font-weight: 500;
+}
+
+.cate-item {
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+}
+
+.cate-item-link {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #a10c0d;
+    height: 42px;
+}
+
+.category-menu ul {
+    padding: 0;
+}
+
+.cate-item-img {
+    padding-left: 25px;
+}
+
+.cate-item-brand {
+    color: white;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-left: 14px;
+}
+
+.cate-list li:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
+.cate-list li:hover .cate-item-brand {
+    color: #faa519
+}
+
+.cate-list li:last-child a {
+    border-bottom: unset;
+}
+
+.modifier {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/* slide */
+
+.slide {
+    background-color: teal;
+    width: 100%;
+    height: 400px;
 }
