@@ -19,8 +19,8 @@ html {
 
 .Home-page {
     width: 100%;
-    height: 732px;
-    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-footer-optimized.jpg') no-repeat bottom center;
+    height: 678px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-header-optimized.jpg') no-repeat top center;
     color: #5e4027;
     font-size: 1.5rem;
 }
@@ -55,7 +55,7 @@ html {
 }
 
 .header-r-top {
-    padding: 16px 0;
+    padding: 20px 0;
     color: #8b0304;
     display: flex;
     justify-content: flex-end;
@@ -86,7 +86,7 @@ html {
     align-items: center;
 }
 .header-r-bottom-search {
-    width: 70%;
+    width: 65%;
     display: flex;
     background: rgba(255,255,255,.4);
     height: 37px;
@@ -149,7 +149,7 @@ html {
 .header-r-bottom-search .search-btn {
     display: flex;
     align-items: center;
-    width: 18%;
+    width: 20%;
 }
 
 .header-r-bottom-search .search-option-icon-btn {
@@ -173,4 +173,97 @@ html {
 
 .search-info::placeholder {
     color: #9d0b0f;
+}
+
+
+
+/* user log */
+
+.header-r-bottom-user {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-r-bottom-user a {
+    text-decoration: none;
+}
+
+.header-r-bottom-user a:hover {
+    color:unset;
+}
+
+.user-log {
+    display: flex;
+}
+
+.user-log-text-link {
+    display: flex;
+    flex-direction: column;
+    color: #8b0304;
+}
+
+
+.user-log-link {
+    display: block;
+    width: 37px;
+    height: 37px;
+    line-height: 32px;
+    border: solid 2px #faa519;
+    text-align: center;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 15%);
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.4);
+    color: #8b0304;
+    position: relative;
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.log-in {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.user-log-text-acc {
+    font-size: 1.3rem;
+    position: relative;
+    color: #795e2f;
+}
+
+.user-log-text-icon {
+    position: absolute;
+    left: 62px;
+}
+
+/* cart */
+
+.cart {
+    position: relative;
+}
+
+.cart-quan {
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background: #faa519;
+    z-index: 1;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+
+/* Category */
+
+.category-menu {
+    width: 250px;
+    height: 346px;
+    background: #8b0304 url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-product-menu.png') no-repeat center;
+    background-image: cover;
+    color: #fff;
 }
