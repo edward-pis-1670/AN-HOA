@@ -562,11 +562,14 @@ a:hover {
     margin-right: 0px;
     border: solid 1px #c0a884;
 }
+.sub-header .modifier-border {
+    border-left: solid 1px #ded3c2;
+}
 .item {
     padding: 20px;
     display: flex;
     height: 72px;
-    border-left: solid 1px #ded3c2;
+
     align-items: center;
 }
 .sub-header::before {
@@ -798,4 +801,234 @@ a:hover {
     right: 50%;
     transform: translateX(50%);
     top: 130px;
+}
+
+
+.group-hot-item {
+    margin-bottom: 80px;
+}
+
+/* gift product */
+
+.gift-product {
+    text-align: center;
+}
+
+.btn-primary1 {
+    display: inline-block;
+    height: 47px;
+    border: solid 1px #8b0304;
+    min-width: 310px;
+    line-height: 40px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    background-color: #8b0304;
+    position: relative;
+    border-left: unset;
+    border-right: unset;
+    margin-left: 14px;
+    margin-right: 14px;
+    color: white;
+}
+
+.btn-primary1::before {
+    content: "";
+    display: block;
+    width: 14px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    bottom: -1px;
+    left: -14px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn47-bg-left-hover-solid.png') no-repeat;
+}
+
+.btn-primary1::after {
+    content: "";
+    display: block;
+    width: 14px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    bottom: -1px;
+    right: -14px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn47-bg-right-hover-solid.png') no-repeat;
+}
+
+
+.decor {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+
+.decor::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: solid 1px #8b0304;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 2px);
+    left: 0;
+    background: #efe8e2;
+}
+
+.decor::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: solid 1px #8b0304;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 2px);
+    right: 0;
+    background: #efe8e2;
+}
+
+.lineL {
+    display: block;
+    height: 1px;
+    background: #8b0304;
+    width: 1000px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: calc(100% + 14px);
+}
+
+.lineR {
+    display: block;
+    height: 1px;
+    background: #8b0304;
+    width: 1000px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: calc(100% + 14px);
+}
+
+/* list gift */
+
+.gift-list {
+    background: #fff;
+    padding: 4px;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 4%);
+    height: 326px;
+}
+
+.gift-item {
+    width: 100%;
+    border: solid 1px #f0e9e3;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #9d0b0f;
+}
+
+.gift-info {
+    position: absolute;
+    width: 280px;
+    padding: 16px;
+    text-align: start;
+}
+
+.gift-item-title {
+    font-weight: bold;
+    color: #9d0b0f;
+    font-size: 24px;
+}
+
+.gift-item-desc {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    color: rgb(83, 81, 81);
+    font-weight: 500;
+}
+
+
+.gift-item-img {
+    position: absolute;
+    right: 15px;
+    bottom: 65px;
+}
+
+.gift-item-link {
+    display: block;
+    position: absolute;
+    color: #9d0b0f;
+    background: #fff;
+    padding: 3px 25px;
+    border: solid 1px #e9e9e9;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    top: 150px;
+}
+
+.smguter {
+    padding: 0;
+}
+
+.withBtn {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.withBtn .slide-btn-left {
+    left: -3px;
+}
+
+.withBtn .slide-btn-left::before {
+    width: 31px;
+    height: 31px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/slick-prev-xs.png');
+}
+
+.withBtn .slide-btn-left::after {
+    display: none;
+}
+
+.withBtn .slide-btn-right {
+    right: 7px;
+    z-index: 2;
+}
+
+.withBtn .slide-btn-right::before {
+    width: 31px;
+    height: 31px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/slick-next-xs.png');
+}
+
+.withBtn .slide-btn-right::after {
+    display: none;
+}
+.withBtn .slide-btn-right:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+}
+
+/* list dots */
+
+.withBtn .list-dots {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    text-align: center;
+    width: 100%;
+}
+
+.withBtn .list-dots .dot {
+    display: block;
+}
+
+.withBtn .list-dots .dot .dot-btn {
+    
 }
