@@ -352,8 +352,13 @@ a:hover {
 }
 
 .modifier {
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 0px;
+}
+
+.modifier-l {
+    padding-left: 0px;
+    padding-right: 20px;
 }
 
 
@@ -553,13 +558,39 @@ a:hover {
     margin-top: 10px;
     position: relative;
     z-index: 1;
-    margin-left: -5px;
+    margin-left: 0px;
     margin-right: 0px;
+    border: solid 1px #c0a884;
 }
 .item {
     padding: 20px;
     display: flex;
+    height: 72px;
+    border-left: solid 1px #ded3c2;
+    align-items: center;
+}
+.sub-header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 5px;
+    height: 24px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-linked.png') no-repeat center;
+    top: -14px;
+    left: 5px;
+}
 
+.sub-header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 5px;
+    height: 24px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-linked-2.png') no-repeat center;
+    top: -14px;
+    right: 5px;
 }
 
 .item-img {
@@ -567,4 +598,204 @@ a:hover {
     max-width: 45px;
     display: inline-block;
     margin-right: 10px;
+}
+.col-3:first-child .item {
+    border-left:unset;
+}
+
+
+.item-title-1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-bottom: 4px;
+}
+
+.item-title-2 {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Page body */
+
+.page-body-shadow {
+    height: 75px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-top-shadow.png') no-repeat top center;
+}
+
+.hot-primary {
+    text-align: center;
+}
+
+.btn-hot-primary {
+    display: inline-block;
+    height: 47px;
+    border: solid 1px #8b0304;
+    min-width: 310px;
+    line-height: 40px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #8b0304;
+    position: relative;
+    border-left: unset;
+    border-right: unset;
+}
+
+.btn-hot-primary::before {
+    content: "";
+    display: block;
+    width: 13px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    bottom: -1px;
+    left: -13px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn47-bg-left-hover.png') no-repeat;
+}
+
+.btn-hot-primary::after {
+    content: "";
+    display: block;
+    width: 13px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    bottom: -1px;
+    right: -13px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn47-bg-right-hover.png') no-repeat;
+}
+
+.btn-hot-primary:hover {
+    color: #faa519;
+}
+
+
+/* group hot item */
+
+.hot-item {
+    width: 100%;
+    height: 215px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-hot-product-1.jpg') no-repeat center;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.hot-item .item-info-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.hot-item .item-info-slogan {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hot-item .item-info-price {
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 3.2rem;
+}
+
+.hot-item .item-info-discount {
+    margin-bottom: 35px;
+}
+
+.hot-item p {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    margin-bottom: 4px;
+}
+.hot-item a {
+    color: white;
+}
+
+.hot-item .item-info-link {
+    text-transform: uppercase;
+    font-size: 13px;
+    display: inline-block;
+    padding: 5px 20px;
+    border: solid 1px #fff;
+    border-radius: 15px;
+    transition: all .5s ease 0s;
+    color: white;
+}
+
+.hot-item .item-info-link:hover {
+    border-radius: 5px;
+}
+.hot-item .item-info-link-icon {
+    font-size: 1.2rem;
+}
+
+.hot-item .item-info-link-pop {
+    display: block;
+    max-width: 60%;
+    position: absolute;
+    z-index: 1;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hot-item .item-info-link-img {
+    width: 85%;
+}
+
+/* hot-item-large */
+.hot-item.large {
+    width: 100%;
+    height: 451px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-hot-product-3.jpg') no-repeat center;
+    background-size: 100% 100%;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+
+.hot-item.large .item-info-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.hot-item.large .item-info-discount {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 55px;
+}
+
+.hot-item.large .item-info-link {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 20px;
+}
+
+
+.hot-item.large .item-info-link-pop {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 130px;
 }
