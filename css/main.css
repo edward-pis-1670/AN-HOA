@@ -424,7 +424,7 @@ a:hover {
     height: 19px;
     background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-prev.png');
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .slide-btn-left::after {
@@ -434,7 +434,7 @@ a:hover {
     height: 35px;
     background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-prev-bg.png');
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 50%;
     left: 6px;
     transform: translateY(-50%);
@@ -467,7 +467,7 @@ a:hover {
     height: 19px;
     background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-next.png');
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .slide-btn-right::after {
@@ -477,7 +477,7 @@ a:hover {
     height: 35px;
     background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-slider-next-bg.png');
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 50%;
     right: 6px;
     transform: translateY(-50%);
@@ -810,15 +810,16 @@ a:hover {
 
 /* gift product */
 
-.gift-product {
+.style-list-product {
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .btn-primary1 {
     display: inline-block;
     height: 47px;
     border: solid 1px #8b0304;
-    min-width: 310px;
+    min-width: 110px;
     line-height: 40px;
     font-size: 2.6rem;
     font-weight: 700;
@@ -829,6 +830,7 @@ a:hover {
     margin-left: 14px;
     margin-right: 14px;
     color: white;
+    padding: 0 50px;
 }
 
 .btn-primary1::before {
@@ -858,7 +860,7 @@ a:hover {
 
 .decor {
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -982,6 +984,7 @@ a:hover {
 
 .withBtn .slide-btn-left {
     left: -3px;
+    z-index: 10;
 }
 
 .withBtn .slide-btn-left::before {
@@ -996,7 +999,7 @@ a:hover {
 
 .withBtn .slide-btn-right {
     right: 7px;
-    z-index: 2;
+    z-index: 10;
 }
 
 .withBtn .slide-btn-right::before {
@@ -1023,12 +1026,138 @@ a:hover {
     bottom: -30px;
     text-align: center;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .withBtn .list-dots .dot {
-    display: block;
+    display: inline-block;
+}
+
+.withBtn .list-dots .dot .dot-btn::before {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    content: "";
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/slick-dot-active.png');
 }
 
 .withBtn .list-dots .dot .dot-btn {
-    
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.withBtn .list-dots .dot .dot-btn:focus {
+    outline: none;
+}
+
+/* default item list */
+
+
+.default-item {
+    background-color: white;
+    width: 100%;
+    padding: 4px;
+}
+
+.default-item:hover .list-item {
+    border: 1px solid rgba(250,165,25,.5);
+
+}
+
+
+.default-item-link_img {
+    width: 100%;
+}
+.item-core {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 353px;
+}
+
+.item-core:hover {
+    cursor: pointer;
+}
+
+.list-item {
+    border: 1px solid rgb(221, 217, 217);
+}
+.item-core::before {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.item-link {
+    display: block;
+    width: 100%;
+}
+
+.default-item .item-img_image {
+    width: 100%;
+}
+
+.default-item .item-infos-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #5e4027;
+}
+
+
+.default-item .gift-item-link {
+    top: 70px;
+    position: absolute;
+    right: 55px;
+}
+
+.default-item .item-infos {
+    position: relative;
+}
+
+.default-group {
+    display: flex;
+}
+
+.default-list .withBtn .list-dots {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.more-item {
+    color: #917359;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-more.png') no-repeat right center;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: -35px;
+    padding-left: 15px;
+    font-size: 1.5rem;
+}
+
+@keyframes all {
+    from {
+        padding-right: 20px;
+    }
+    to {
+        padding-right: 30px;
+    }
+}
+.more-item:hover {
+    transition: all .3s ease 0s;
+    color: #8b0304;
+    padding-right: 30px;
+    background-image: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn-more-hover.png');
+    cursor: pointer;
+}
+
+
+.more-item-link {
+    display: block;
+    color: #917359;
 }
