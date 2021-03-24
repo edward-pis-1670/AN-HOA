@@ -647,6 +647,7 @@ a:hover {
     position: relative;
     border-left: unset;
     border-right: unset;
+    text-align: center;
 }
 
 .btn-hot-primary::before {
@@ -861,6 +862,7 @@ a:hover {
 .decor {
     overflow: hidden;
     margin-bottom: 10px;
+    position: relative;
 }
 
 
@@ -1163,3 +1165,206 @@ a:hover {
 }
 
 /* filter group */
+
+
+.filter-fruit {
+    overflow: hidden;
+}
+
+.filter-fruit .btn-hot-primary::before {
+    left: 0;
+}
+
+.filter-fruit .decor::before {
+    display: none;
+}
+
+.filter-fruit .decor::after {
+    top: calc(50% - 2px);
+}
+
+.filter-fruit .lineR {
+    left: calc(100% + 12px);
+}
+
+
+
+/* filter-item */
+
+.filter-item-list {
+    text-align: center;
+}
+
+.filter-item {
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/bg-loai-qua.png') no-repeat center;
+    background-size: contain;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.filter-item-img-link .filter-fruit-mo {
+    max-width: 68%;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, -50%);
+    top: 50%;
+}
+
+.filter-item-img-link {
+    display: block;
+    text-align: center;
+    height: 220px;
+    position: relative;
+    top: 0;
+
+}
+
+.filter-item-list-small {
+    text-align: center;
+}
+
+.filter-item-list-small .filter-item-img-link {
+    height: 96px;
+}
+
+
+
+.filter-item:hover {
+    transform: rotate(15deg);
+    transform-origin: center;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition: all .3s ease 0s;
+    will-change: auto;
+}
+
+.filter-item:hover .filter-fruit-name {
+    color: #8b0304;
+}
+
+.filter-fruit-name {
+    display: block;
+    position: absolute;
+    right: 50%;
+    transform: translate(50% , -40px);
+    z-index: 10;
+    color: #5e4027;
+}
+
+.filter-fruit-name:hover {
+    color: #8b0304;
+}
+
+
+/* taste filter */
+.list-taste {
+    margin-top: 30px;
+}
+
+.list-taste .row *[class*='col'] {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.taste-item {
+    border: solid 1px;
+    border-color: #af9d6a;
+    border-left: 0;
+    border-right: 0;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    height: 26px;
+    padding-left: 25px;
+    line-height: 24px
+}
+
+.taste-item:hover .taste-item-link,
+.taste-item:hover,
+.taste-item:hover::before,
+.taste-item:hover .btn-taste,
+.taste-item:hover .btn-taste::before,
+.taste-item:hover .btn-taste::after
+ {
+    color: #8b0304;
+    border-color: #8b0304;
+}
+
+.taste-item:hover::before {
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/dot-hover.png') no-repeat center;
+}
+
+
+
+.taste-item::before {
+    content: "";
+    display: inline-block;
+    z-index: 1;
+    top: -1px;
+    bottom: 0;
+    left: -10px;
+    border: solid 1px;
+    border-color: #af9d6a;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/dot.png') no-repeat center;
+    position: absolute;
+}
+
+.taste-item-link {
+    display: block;
+    color: #3e2714;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.btn-taste {
+    width: 7px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -4px;
+    border: 1px solid;
+    border-color: #af9d6a;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+}
+
+.btn-taste::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+    top: 20px;
+    right: -6px;
+    border-left: 1px solid #af9d6a;
+    position: absolute;
+    transform: rotate(
+45deg
+);
+}
+
+.btn-taste::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+    top: -8px;
+    right: -6px;
+    border-left: 1px solid;
+    border-color: #af9d6a;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+/* active btn */
