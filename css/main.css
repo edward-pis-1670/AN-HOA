@@ -1068,6 +1068,21 @@ a:hover {
 
 }
 
+.default-item-link {
+    display: block;
+    position: relative;
+}
+
+.default-item-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 1px solid #e0be91;
+}
 
 .default-item-link_img {
     width: 100%;
@@ -1263,7 +1278,8 @@ a:hover {
 
 /* taste filter */
 .list-taste {
-    margin-top: 30px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .list-taste .row *[class*='col'] {
@@ -1368,3 +1384,264 @@ a:hover {
 }
 
 /* active btn */
+
+.list-taste .btn-primary1 {
+    display: inline-block;
+    height: 37px;
+    font-size: 1.8rem;
+    line-height: 37px;
+    margin-top: 15px;
+}
+
+.list-taste .btn-primary1::before {
+    width: 14px;
+    top: -1px;
+    bottom: -1px;
+    left: -11px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn37-bg-left-hover-solid.png') no-repeat;
+}
+
+.list-taste .btn-primary1::after {
+    top: -1px;
+    bottom: -1px;
+    right: -14px;
+    background: url('https://honglam.vn/Themes/Themes01/Assets/css/images/btn37-bg-right-hover-solid.png') no-repeat;
+}
+
+/* group-filter-2 */
+
+.group-filter-2 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.group-filter-2 .decor-des {
+    padding: 0 20px;
+}
+
+/* text-tab */
+
+.text-tab {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.text-tab-1 {
+    
+    display: block;
+    height: 41px;
+    background-color: #faa519;
+    line-height: 41px;
+    position: relative;
+    padding: 0 20px;
+    margin: 0px 20px;
+    font-size: 2.6rem;
+    text-align: center;
+    min-width: 170px;
+}
+
+.text-tab-1::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 41px;
+    position: absolute;
+    left: -11px;
+    background-image: url(https://honglam.vn/Themes/Themes01/Assets/css/images/btn41-bg-left-hover-solid-2.png);
+}
+
+.text-tab-1::after {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 41px;
+    position: absolute;
+    top: 0;
+    right: -11px;
+    background-image: url(https://honglam.vn/Themes/Themes01/Assets/css/images/btn41-bg-right-hover-solid-2.png);
+}
+
+
+/* group purposes */
+
+.purpose-item {
+    background-color: white;
+    height: 100%;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 1px 0.03px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 1px 0.03px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 1px 0.03px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.purpose-item:hover .purpose-item-title,
+.purpose-item:hover::after
+ {
+    color: #8b0304;
+    border-color: rgba(250,165,25,.5);
+}
+
+.purpose-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: solid 1px ;
+    border-color: #f0e9e3;
+}
+
+.purpose-item-link {
+    display: block;
+}
+
+.purpose-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.purpose-item-title {
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    padding: 10px 0;
+    line-height: 20px;
+    color: #5e4027;
+}
+
+
+/* magazine */
+
+.magazine {
+    text-align: initial;
+    margin-top: 60px;
+}
+
+.magazine .decor::before {
+    display: none;
+}
+
+.magazine .btn-hot-primary::before {
+    left: 0;
+}
+
+.magazine-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.magazine-item {
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 9px;
+}
+
+.magazine-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 3px solid #e0be91;
+}
+
+.magazine-item-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #5e4027;
+    display: block;
+    margin-top: 10px;
+
+}
+
+.magazine-item-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .container .btn-primary1 {
+    background: url('https://honglam.vn/pic/banner/honglam-logo-bottom.png') no-repeat center;
+    height: 61px;
+    border: none;
+    min-width: 249px;
+}
+
+footer .container .btn-primary1::before {
+    display: none;
+}
+footer .container .btn-primary1::after {
+    display: none;
+}
+
+footer .decor::before {
+    top: calc(50% - 4px);
+}
+
+footer .decor::after {
+    top: calc(50% - 4px);
+}
+
+/* footer1 */
+
+.detail-footer {
+    display: flex;
+    width: 100%;
+    text-align: initial;
+    margin-bottom: 40px;
+}
+
+.footer-title {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.list-desc-footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.list-desc-footer-link {
+    padding-bottom: 5px;
+    position: relative;
+    line-height: 1.6rem;
+}
+
+
+.list-desc-footer-link a{
+    color: #5e4027;
+    font-size: 1.6rem;
+    line-height: 16px;
+
+}
+
+.list-desc-footer-icon {
+    height: 21px;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 22px;
+    padding-right: 10px;
+    top: 5px;
+}
